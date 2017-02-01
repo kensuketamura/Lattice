@@ -1,0 +1,59 @@
+extends jade/layout
+block header
+block loadFiles
+  +js('js/lattice.js')
+block contents
+  .contents
+    .block.input
+      .title
+        h2 Parameter
+      .body
+        table.input-table
+          tr
+            td
+              p 繰り返し回数
+            td
+              p x =
+            td
+              input#p(type="number", name="p")
+          tr
+            td
+              p 組み替え回数
+            td
+              p n =
+            td
+              input#n(type="number", name="n")
+          tr
+            td
+              p 格子一辺の長さ
+            td
+              p l =
+            td
+              input#l(type="number", name="l")
+    .block.tool
+      .body
+        .go-button() Go
+    .block.result
+      .title
+        h2 Result
+        .loading
+      .body
+        table
+          tr
+            td
+              p 空間配置の数
+            td
+              p #Q =
+            td
+              p#q.result-value ---- 
+            td
+              p 個
+          tr
+            td
+              p 所要時間
+            td
+              p t =
+            td
+              p#t.result-value ----
+            td
+              p ms

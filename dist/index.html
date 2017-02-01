@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>Lattice</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=720, initial-scale=1">
+    <link rel="stylesheet" href="./vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+  </head>
+  <body>
+    <div class="js-loader">
+      <script type="text/javascript" src="js/lattice.js"></script>
+    </div>
+    <div class="contents">
+      <div class="block input">
+        <div class="title">
+          <h2>Parameter</h2>
+        </div>
+        <div class="body">
+          <table class="input-table">
+            <tr>
+              <td>
+                <p>繰り返し回数</p>
+              </td>
+              <td>
+                <p>x =</p>
+              </td>
+              <td>
+                <input id="p" type="number" name="p">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>組み替え回数</p>
+              </td>
+              <td>
+                <p>n =</p>
+              </td>
+              <td>
+                <input id="n" type="number" name="n">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>格子一辺の長さ</p>
+              </td>
+              <td>
+                <p>l =</p>
+              </td>
+              <td>
+                <input id="l" type="number" name="l">
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="block tool">
+        <div class="body">
+          <div class="go-button">Go</div>
+        </div>
+      </div>
+      <div class="block result">
+        <div class="title">
+          <h2>Result</h2>
+          <div class="loading"></div>
+        </div>
+        <div class="body">
+          <table>
+            <tr>
+              <td>
+                <p>空間配置の数</p>
+              </td>
+              <td>
+                <p>#Q =</p>
+              </td>
+              <td>
+                <p id="q" class="result-value">---- </p>
+              </td>
+              <td>
+                <p>個</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>所要時間</p>
+              </td>
+              <td>
+                <p>t =</p>
+              </td>
+              <td>
+                <p id="t" class="result-value">----</p>
+              </td>
+              <td>
+                <p>ms</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
