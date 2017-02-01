@@ -1,0 +1,94 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.contents {
+  width: 80%;
+  min-width: 890px;
+  margin: auto;
+}
+.block {
+  margin: 20px 0;
+}
+.block .title {
+  border-bottom: solid 1px #999;
+  margin-bottom: 20px;
+}
+.block .title h2 {
+  margin: 0;
+}
+.block .body {
+  margin-left: 25px;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.input .input-table {
+  font-family: "consolas";
+  width: 370px;
+}
+.input .input-table td {
+  box-sizing: border-box;
+  padding: 0 10px 0 0;
+}
+.input input {
+  font-family: "consolas";
+  box-sizing: border-box;
+  padding-left: 5px;
+  border: solid 1px #999;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 40px;
+  height: 40px;
+}
+.tool {
+  width: 50%;
+  height: 50px;
+}
+.tool .go-button {
+  box-shadow: 0;
+  border: solid 1px #999;
+  border-radius: 4px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 40px;
+  width: 355px;
+  height: 40px;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 125ms;
+  transition-timing-function: cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+.tool .go-button:hover {
+  color: white;
+  border-color: #437da2;
+  background-color: #0a9fe8;
+}
+.result {
+  width: 50%;
+}
+.result .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.result .title .loading {
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+.result .body {
+  font-family: "consolas";
+}
+.result .body table {
+  width: 370px;
+}
+.result .body table td {
+  box-sizing: border-box;
+  padding: 0 10px 0 0;
+}
