@@ -139,6 +139,11 @@ class Position {
   }
 }
 
+
+window.draw = function (lattice) {
+
+}
+
 window.mcmc = new Mcmc();
 
 window.onload = function() {
