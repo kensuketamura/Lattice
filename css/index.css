@@ -10,7 +10,7 @@ body {
   margin: auto;
 }
 .block {
-  margin: 20px 0;
+  margin: 20px auto;
 }
 .block .title {
   border-bottom: solid 1px #999;

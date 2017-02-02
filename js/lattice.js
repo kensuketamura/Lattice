@@ -226,6 +226,8 @@ var Position = function Position(x, y) {
   this.y = y;
 };
 
+window.draw = function (lattice) {};
+
 window.mcmc = new Mcmc();
 
 window.onload = function () {
